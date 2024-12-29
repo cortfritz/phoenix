@@ -11,10 +11,23 @@ module.exports = {
     "../lib/<%= @lib_web_name || @app_name %>.ex",
     "../lib/<%= @lib_web_name || @app_name %>/**/*.*ex"
   ],
+  darkMode: 'class', // Enable dark mode with class strategy
   theme: {
     extend: {
       colors: {
         brand: "#FD4F00",
+        // Light mode colors
+        light: {
+          background: '#ffffff',
+          text: '#1a1a1a',
+          primary: '#FD4F00',
+        },
+        // Dark mode colors
+        dark: {
+          background: '#1a1a1a',
+          text: '#ffffff',
+          primary: '#ff6b1a',
+        }
       }
     },
   },
