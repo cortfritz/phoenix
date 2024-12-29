@@ -3,7 +3,7 @@
   <:subtitle>Manage your account email address and password settings</:subtitle>
 </.header>
 
-<div class="space-y-12 divide-y">
+<div class="space-y-12 divide-y divide-zinc-100 dark:divide-zinc-800">
   <div>
     <.simple_form :let={f} for={@email_changeset} action={~p"<%= schema.route_prefix %>/settings"} id="update_email">
       <.error :if={@email_changeset.action}>

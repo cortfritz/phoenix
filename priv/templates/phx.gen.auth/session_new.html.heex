@@ -3,7 +3,7 @@
     Log in to account
     <:subtitle>
       Don't have an account?
-      <.link navigate={~p"<%= schema.route_prefix %>/register"} class="font-semibold text-brand hover:underline">
+      <.link navigate={~p"<%= schema.route_prefix %>/register"} class="font-semibold text-brand hover:underline dark:text-brand/80">
         Sign up
       </.link>
       for an account now.
@@ -24,7 +24,7 @@
 
     <:actions :let={f}>
       <.input field={f[:remember_me]} type="checkbox" label="Keep me logged in" />
-      <.link href={~p"<%= schema.route_prefix %>/reset-password"} class="text-sm font-semibold">
+      <.link href={~p"<%= schema.route_prefix %>/reset-password"} class="text-sm font-semibold text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100">
         Forgot your password?
       </.link>
     </:actions>
